@@ -68,11 +68,11 @@
 		 {
              if (event.item == "Module In 1")
 			 {
-				moduleLoaderIn.url = "com/riamore/labs/robotlegs/examples/dynmodules/modules/in1/In1.swf";
+				moduleLoaderIn.url = "In1.swf";
 			 }
 			 else
 			 {
-				moduleLoaderIn.url = "com/riamore/labs/robotlegs/examples/dynmodules/modules/in2/In2.swf";
+				moduleLoaderIn.url = "In2.swf";
 			 }
          }
 		 
@@ -82,12 +82,12 @@
 			 if (event.item == "Module Out 1")
 			 
 			 {
-				moduleLoaderOut.url = "com/riamore/labs/robotlegs/examples/dynmodules/modules/out1/Out1.swf";
+				moduleLoaderOut.url = "Out1.swf";
 
 			 }
 			 else
 			 {
-				moduleLoaderOut.url = "com/riamore/labs/robotlegs/examples/dynmodules/modules/out2/Out2.swf";
+				moduleLoaderOut.url = "Out2.swf";
 				
 			 }
          }
@@ -104,13 +104,13 @@
 		<s:Label x="20" y="10" text="Select the input panel "/>
 		<mx:TabBar x="20" y="35" id="tabbarIn"  itemClick="changeInSelection(event);"  dataProvider="{['Module In 1','Module In 2']}" />
         <mx:ProgressBar x="190" y="10" width="75" id="progressIn" source="{moduleLoaderIn}" />
-		<mx:ModuleLoader x="20" y="59" id="moduleLoaderIn" url="com/riamore/labs/robotlegs/examples/dynmodules/modules/in1/In1.swf" 
+		<mx:ModuleLoader x="20" y="59" id="moduleLoaderIn" url="In1.swf" 
 		 progress="onProgressIn(event)" ready="onReadyIn(event)" applicationDomain = "{ApplicationDomain.currentDomain}" />
 		
 		 <s:Label x="290" y="10" text="Select the output panel "/>
         <mx:TabBar x="290" y="35" id="tabBarOut" itemClick="changeOutSelection(event);" dataProvider="{['Module Out 1','Module Out 2']}" /> 
         <mx:ProgressBar x="480" y="10" width="75" id="progressOut" source="{moduleLoaderOut}" />
-		<mx:ModuleLoader x="290" y="59" id="moduleLoaderOut" url="com/riamore/labs/robotlegs/examples/dynmodules/modules/out1/Out1.swf" 
+		<mx:ModuleLoader x="290" y="59" id="moduleLoaderOut" url="Out1.swf" 
 			applicationDomain = "{ApplicationDomain.currentDomain}" />
 		
 </s:Application>
